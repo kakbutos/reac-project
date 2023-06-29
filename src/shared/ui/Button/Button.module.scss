@@ -11,10 +11,30 @@
     outline: none;
 }
 
+.clearInverted {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--inverted-primary-color);
+}
+
 .outline {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     background: none;
+}
+
+.background {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    border: none;
+}
+
+.backgroundInverted {
+    background: var(--inverted-bg-color);
+    color: var(--inverted-primary-color);
+    border: none;
 }
 
 .square {
@@ -46,16 +66,4 @@
 
 .size_xl {
     font: var(--font-xl);
-}
-
-.background {
-    background: var(--bg-color);
-    color: var(--primary-color);
-    border: none;
-}
-
-.backgroundInverted {
-    background: var(--inverted-bg-color);
-    color: var(--inverted-primary-color);
-    border: none;
 }
