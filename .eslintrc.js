@@ -48,10 +48,16 @@ module.exports = {
         }],
         'max-len': ['error', {
             ignoreComments: true,
-            code: 100,
+            code: 120,
         }],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
+        'no-param-reassign': ['error', {
+            props: true,
+            ignorePropertyModificationsFor: [
+                'state',
+            ],
+        }],
     },
     globals: {
         __IS_DEV__: true,
