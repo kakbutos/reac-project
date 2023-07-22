@@ -27,7 +27,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     disabled?: boolean;
     children?: ReactNode;
 }
-// есть смысл в мемо, так как зачастую чилдрен это текст
+
 export const Button = memo((props: ButtonProps) => {
     const {
         className,
@@ -40,18 +40,20 @@ export const Button = memo((props: ButtonProps) => {
     } = props;
 
     const mods: Mods = {
+        [cls[theme]]: true,
         [cls.square]: square,
+        [cls[size]]: true,
         [cls.disabled]: disabled,
     };
 
     return (
         <button
             type="button"
-            className={classNames(cls.Button, mods, [className, cls[theme], cls[size]])}
+            className={classNames(cls.Button, mods, [className])}
             disabled={disabled}
             {...otherProps}
         >
-            { children }
+            {children}
         </button>
     );
 });
