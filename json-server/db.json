@@ -101,7 +101,19 @@
       "id": "3",
       "text": "some comment 3",
       "articleId": "1",
-      "userId": "1"
+      "userId": "2"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "круто",
+      "id": "lqRFcGZ"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "средне",
+      "id": "72MdsMA"
     }
   ],
   "users": [
@@ -110,24 +122,38 @@
       "username": "admin",
       "password": "123",
       "role": "ADMIN",
-      "avatar": "https://cdn-icons-png.flaticon.com/512/2870/2870712.png"
+      "avatar": "https://socialdraft.com/cdn/shop/products/5b30311d21b41190858c1477b6adb3ac.png?v=1679643163"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+      "avatar": "https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png"
     }
   ],
-  "profile": {
-    "first": "jgh",
-    "lastname": "asf",
-    "age": 465,
-    "currency": "RUB",
-    "country": "Belarus",
-    "city": "Moscow",
-    "username": "admin213",
-    "avatar": "https://socialdraft.com/cdn/shop/products/5b30311d21b41190858c1477b6adb3ac.png?v=1679643163"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "test1",
+      "lastname": "ag",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "test1",
+      "avatar": "https://socialdraft.com/cdn/shop/products/5b30311d21b41190858c1477b6adb3ac.png?v=1679643163"
+    },
+    {
+      "id": "2",
+      "first": "artur",
+      "lastname": "test",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "artur",
+      "avatar": "https://icons-for-free.com/iconfiles/png/512/business+costume+male+man+office+user+icon-1320196264882354682.png"
+    }
+  ]
 }
