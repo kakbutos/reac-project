@@ -1,14 +1,14 @@
-import {
-    profileActions, profileReducer, ProfileSchema, updateProfileData, ValidateProfileError,
-} from 'entities/Profile';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
+import { updateProfileData } from '../services/updateProfileData/updateProfileData';
+import { ProfileSchema, ValidateProfileError } from '../types/profile';
+import { profileActions, profileReducer } from './profileSlice';
 
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Russia,
-    lastname: 'a',
+    country: Country.Armenia,
+    lastname: 'artur',
     first: 'asd',
     city: 'asf',
     currency: Currency.USD,

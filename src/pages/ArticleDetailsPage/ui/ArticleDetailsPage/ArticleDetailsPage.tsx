@@ -11,19 +11,19 @@ import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEf
 import { AddCommentForm } from 'features/addCommentForm';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { Page } from 'widgets/Page/Page';
-import { articleDetailsPageReducer } from 'pages/ArticleDetailsPage/model/slices';
-import {
-    getArticleRecommendationsIsLoading,
-} from 'pages/ArticleDetailsPage/model/selectors/recommendations';
 import {
     getArticleRecommendations,
-} from 'pages/ArticleDetailsPage/model/slices/articleDetailsPageRecommendationsSlice';
+} from '../../model/slices/articleDetailsPageRecommendationsSlice';
 import {
     fetchArticleRecommendations,
-} from 'pages/ArticleDetailsPage/model/services/fetchArticleRecommendations/fetchArticleRecommendations';
+} from '../../model/services/fetchArticleRecommendations/fetchArticleRecommendations';
 import {
     ArticleDetailsPageHeader,
-} from 'pages/ArticleDetailsPage/ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader';
+} from '../../ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader';
+import {
+    getArticleRecommendationsIsLoading,
+} from '../../model/selectors/recommendations';
+import { articleDetailsPageReducer } from '../../model/slices';
 import { addCommentForArticle } from '../../model/services/addCommentForArticle/addCommentForArticle';
 import {
     fetchCommentsByArticleId,
