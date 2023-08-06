@@ -45,7 +45,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'i18next/no-literal-string': ['error', {
             markupOnly: true,
-            ignoreAttribute: ['data-testid', 'to', 'target'],
+            ignoreAttribute: ['data-testid', 'to', 'target', 'direction'],
         }],
         'max-len': ['error', {
             ignoreComments: true,
