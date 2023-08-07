@@ -595,6 +595,12 @@
       "userId": "1",
       "text": "python!!!",
       "id": "p5rMadd"
+    },
+    {
+      "articleId": "18",
+      "userId": "1",
+      "text": "test",
+      "id": "l6w1dQO"
     }
   ],
   "users": [
@@ -619,8 +625,8 @@
       "first": "test11",
       "lastname": "ag",
       "age": 465,
-      "currency": "RUB",
-      "country": "Belarus",
+      "currency": "USD",
+      "country": "Russia",
       "city": "Moscow",
       "username": "test1",
       "avatar": "https://socialdraft.com/cdn/shop/products/5b30311d21b41190858c1477b6adb3ac.png?v=1679643163"
