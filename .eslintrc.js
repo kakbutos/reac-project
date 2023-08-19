@@ -63,7 +63,14 @@ module.exports = {
             ],
         }],
         'no-undef': 'off',
-        'kakbutos-plugin/path-checker': 'error',
+        'kakbutos-plugin/path-checker': ['error', { alias: '@' }],
+        'kakbutos-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
