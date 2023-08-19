@@ -64,6 +64,13 @@ module.exports = {
         }],
         'no-undef': 'off',
         'kakbutos-plugin/path-checker': ['error', { alias: '@' }],
+        'kakbutos-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'kakbutos-plugin/public-api-imports': [
             'error',
             {

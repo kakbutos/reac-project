@@ -5,7 +5,7 @@ import { ReducersList } from '@/shared/lib/components/DynamicModuleLoader/Dynami
 import { articleDetailsReducer } from '@/entities/Article/testing';
 import { addCommentFormReducer } from '@/features/addCommentForm/testing';
 import { loginReducer } from '@/features/AuthByUsername/testing';
-// eslint-disable-next-line kakbutos-plugin/public-api-imports
+// eslint-disable-next-line kakbutos-plugin/layer-imports,kakbutos-plugin/public-api-imports
 import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/model/slices';
 
 const defaultAsyncReducers: ReducersList = {
