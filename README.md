@@ -70,7 +70,7 @@ npm run start:dev или npm run start:dev:vite - запуск сервера + 
 В проекте используется eslint для проверки typescript кода и stylelint для проверки файлов со стилями.
 
 Также для строгого контроля главных архитектурных принципов
-используется собственный eslint plugin *eslint-plugin-kakbutos-plugin*,
+используется собственный eslint plugin *[eslint-plugin-kakbutos-plugin](https://www.npmjs.com/package/eslint-plugin-kakbutos-plugin)*,
 который содержит 3 правила
 1) path-checker - запрещает использовать абсолютные импорты в рамках одного модуля
 2) layer-imports - проверяет корректность использования слоев с точки зрения FSD
@@ -175,7 +175,6 @@ Clear.args = {
 
 - [Article](/src/entities/Article)
 - [Comment](/src/entities/Comment)
-- [Counter](/src/entities/Counter)
 - [Country](/src/entities/Country)
 - [Currency](/src/entities/Currency)
 - [Notification](/src/entities/Notification)
@@ -186,7 +185,6 @@ Clear.args = {
 ## Фичи (features)
 
 - [addCommentForm](/src/features/addCommentForm)
-- [articleEditForm](/src/features/articleEditForm)
 - [articleRating](/src/features/articleRating)
 - [articleRecommendationsList](/src/features/articleRecommendationsList)
 - [AuthByUsername](/src/features/AuthByUsername)
@@ -194,6 +192,5 @@ Clear.args = {
 - [editableProfileCard](/src/features/editableProfileCard)
 - [LangSwitcher](/src/features/LangSwitcher)
 - [notificationButton](/src/features/notificationButton)
-- [profileRating](/src/features/profileRating)
 - [ThemeSwitcher](/src/features/ThemeSwitcher)
 - [UI](/src/features/UI)
