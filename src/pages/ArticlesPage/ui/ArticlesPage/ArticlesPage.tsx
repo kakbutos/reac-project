@@ -26,7 +26,9 @@ const ArticlesPage = (props: ArticlesPageProps) => {
     const [searchParams] = useSearchParams();
 
     const onLoadNextPart = useCallback(() => {
-        dispatch(fetchNextArticlesPage());
+        if (__PROJECT__ !== 'storybook' && __PROJECT__ !== 'jest') {
+            dispatch(fetchNextArticlesPage());
+        }
     }, [dispatch]);
 
     useInitialEffect(() => {
